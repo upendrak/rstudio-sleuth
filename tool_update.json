@@ -1,0 +1,41 @@
+{
+  "id": "c32954a8-cd15-480f-8c58-4df12b3a5037",
+  "description": "Rstudio Sleuth VICE image",
+  "interactive": true,
+  "name": "rstudio-sleuth",
+  "type": "interactive",
+  "restricted": false,
+  "container": {
+    "min_cpu_cores": 0.1,
+    "max_cpu_cores": 2,
+    "memory_limit": 4000000000,
+    "interactive_apps": {
+      "image": "discoenv/cas-proxy",
+      "name": "cas-proxy",
+      "cas_url": "https://auth.iplantcollaborative.org/cas4/",
+      "cas_validate": "validate"
+    },
+    "container_ports": [
+      {
+        "container_port": 80
+      }
+    ],
+    "network_mode": "bridge",
+    "skip_tmp_mount": true,
+    "working_directory": "/home/rstudio",
+    "image": {
+      "name": "gims.cyverse.org:5000/sleuth",
+      "tag": "1.0"
+    },
+    "uid": 0
+  },
+  "version": "0.0.1",
+  "implementation": {
+    "implementor": "Upendra Devisetty",
+    "implementor_email": "upendra@cyverse.org",
+    "test": {
+      "input_files": [],
+      "output_files": []
+    }
+  }
+}

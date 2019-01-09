@@ -1,0 +1,76 @@
+{
+  "description": "Rstudio Sleuth VICE image",
+  "name": "Rstudio-Sleuth-1.0",
+  "tools": [
+    {
+      "name": "rstudio-sleuth",
+      "deprecated": false,
+      "type": "interactive",
+      "description": "Rstudio Sleuth VICE image",
+      "id": "c32954a8-cd15-480f-8c58-4df12b3a5037",
+      "version": "1.0"
+    }
+  ],
+  "system_id": "de",
+  "references": [],
+  "groups": [
+    {
+      "name": "Select Input Files and Folder",
+      "label": "Select Input Files and Folder",
+      "isVisible": true,
+      "parameters": [
+        {
+          "description": "",
+          "name": "",
+          "type": "Info",
+          "omit_if_blank": false,
+          "validators": [],
+          "label": "<h1>The username and password for Rstudio is \"rstudio\"</h1> ",
+          "order": 0,
+          "isVisible": true,
+          "defaultValue": null,
+          "required": false
+        },
+        {
+          "description": "Select the files to process.",
+          "name": "",
+          "type": "MultiFileSelector",
+          "omit_if_blank": false,
+          "validators": [],
+          "label": "Input files",
+          "file_parameters": {
+            "format": "Unspecified",
+            "file_info_type": "File",
+            "is_implicit": true,
+            "repeat_option_flag": false,
+            "data_source": "file",
+            "retain": false
+          },
+          "order": 0,
+          "isVisible": true,
+          "defaultValue": null,
+          "required": false
+        },
+        {
+          "description": "",
+          "name": "",
+          "type": "FolderInput",
+          "omit_if_blank": false,
+          "validators": [],
+          "label": "Input Folder",
+          "file_parameters": {
+            "format": "Unspecified",
+            "file_info_type": "File",
+            "is_implicit": true,
+            "data_source": "file",
+            "retain": false
+          },
+          "order": 0,
+          "isVisible": true,
+          "defaultValue": null,
+          "required": false
+        }
+      ]
+    }
+  ]
+}
